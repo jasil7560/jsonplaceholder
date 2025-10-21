@@ -4,7 +4,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
-import UserPosts from "./components/Userposts";
+import UserPosts from "./components/UserPosts";
 import PostDetails from "./components/PostDetails";
 
 function App() {
