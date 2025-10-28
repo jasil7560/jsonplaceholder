@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Homepage.css";
 
 function Homepage() {
   const [posts, setPosts] = useState([]);
   const [search, setSearch] = useState("");
+const navigate=useNavigate()
+
+  function movetoalluser(){
+navigate("/alluser")
+  }
 
   useEffect(() => {
     axios
@@ -19,6 +24,8 @@ function Homepage() {
       post.title.toLowerCase().includes(search.toLowerCase()) ||
       post.body.toLowerCase().includes(search.toLowerCase())
   );
+ 
+  
 
   return (
     <div className="container">
@@ -32,6 +39,7 @@ function Homepage() {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
+        <button onClick={movetoalluser}>All users</button>
       </div>
 
    

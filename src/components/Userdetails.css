@@ -1,0 +1,61 @@
+.user-card {
+  background: linear-gradient(135deg, #ffffff, #f3f8ff);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user-card h1 {
+  color: #2d4059;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.user-card h2 {
+  color: #1e88e5;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.user-card p {
+  color: #444;
+  font-size: 1rem;
+  margin: 6px 0;
+  line-height: 1.4;
+}
+
+.user-card button {
+  background: linear-gradient(90deg, #2196f3, #21cbf3);
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.user-card button:hover {
+  background: linear-gradient(90deg, #1976d2, #00bcd4);
+  transform: scale(1.05);
+}
+
+.user-card button:active {
+  transform: scale(0.98);
+}

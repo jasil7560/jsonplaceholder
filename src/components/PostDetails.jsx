@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
-import "./Homepage.css";
+import "./Postdetails.css";
+import Comments from "./Comments";
 
 function PostDetails() {
   const { id } = useParams();
@@ -34,6 +35,7 @@ function PostDetails() {
           <span>Post ID: {post.id}</span>
         </div>
       </div>
+      <Comments id={id}/>
     </div>
   );
 }

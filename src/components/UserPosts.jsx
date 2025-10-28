@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
-import "./Homepage.css";
+import "./UserPosts.css";
+import UserDetails from "./UserDetails";
 
 function UserPosts() {
   const { id } = useParams();
@@ -13,7 +14,7 @@ function UserPosts() {
         const res = await axios.get(
           `https://jsonplaceholder.typicode.com/posts?userId=${id}`
         );
-        setPosts(res.data.slice(0, 10)); 
+        setPosts(res.data); 
       } catch (error) {
         console.error("Error fetching user posts:", error);
       }
@@ -26,6 +27,7 @@ function UserPosts() {
       <Link to="/" className="back-btn">
         ← Back to All Posts
       </Link>
+      <UserDetails id={id}/>
       <h2>User {id} — First 10 Posts</h2>
 
       <div className="grid">

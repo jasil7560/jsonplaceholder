@@ -1,0 +1,83 @@
+/* Container styling */
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background: linear-gradient(135deg, #ffffff, #f1f5ff);
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Back button */
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #4a47a3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+/* Page title */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2d2d2d;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Post card */
+.post-card {
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* no underline */
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+.post-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Post body */
+.post-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #f8f8f8;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+/* Post info section */
+.post-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #f1f1f1;
+  opacity: 0.9;
+}
