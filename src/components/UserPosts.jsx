@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 import "./UserPosts.css";
 import UserDetails from "./UserDetails";
 
-function UserPosts() {
+function Userposts() {
   const { id } = useParams();
   const [posts, setPosts] = useState([]);
 
@@ -50,4 +50,4 @@ function UserPosts() {
   );
 }
 
-export default UserPosts;
+export default Userposts;
